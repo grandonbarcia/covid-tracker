@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TitleBar from './TitleBar/TitleBar';
+import NavBar from './NavBar/NavBar';
+import GlobalSummary from './GlobalSummary/GlobalSummary';
+import DailyTracker from './DailyTracker/DailyTracker';
+import Table from './UnitedStatesData/Table';
+import UnitedStatesData from './UnitedStatesData/UnitedStatesData';
+import SideBar from './SideBar/SideBar';
+import {DataProvider} from "./DataProvider";
 
-function App() {
+
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="container-fluid">
+          <TitleBar/>
+          <div className = "row">
+
+            <DataProvider>
+              <GlobalSummary />
+              <DailyTracker />
+              <UnitedStatesData/>
+            </DataProvider>
+            <SideBar />
+          </div>
+        </div>
     </div>
   );
 }

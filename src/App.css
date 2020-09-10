@@ -1,38 +1,134 @@
+a {
+
+}
+
+
+
+
+a:link  {
+  text-decoration: none!important;
+  color: inherit;
+  display:inline-block;
+}
+
+a:visited {
+  color: #4BC0C0;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page-title-row {
+  padding-bottom: 25px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-title{
+  font-size: calc(10px + 2vmin);
+  padding: 25px 0px 0px 25px;
+}
+
+.main-title-row {
+  padding-bottom: 75px
+}
+
+
+.main-title {
+
+  font-size: calc(10px + 2vmin);
+  border-bottom: 5px solid;
+
+}
+
+
+.panel {
+  /* border: 1px solid;
+  height: 230px;
+  width: 240px;
+  padding: 10px; */
+}
+
+
+.summary {
+  padding-bottom: 100px;
+}
+
+.details {
+  padding-bottom: 100px;
+}
+
+.table {
+  padding-bottom: 100px
+}
+
+.table-responsive{
+  max-height: 100%;
+  overflow: auto
+}
+
+.summary .title-name{
+font-size: calc(10px + 2vmin);
+
+}
+
+.summary .title-num{
+  font-size: calc(10px + 2vmin);
+  color: #4BC0C0;
+  letter-spacing: 0.8px;
+
+}
+
+.summary .sub-title{
+  font-size: calc(5px + 1vmin);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.summary .sub-num{
+  font-size: calc(8px + 1vmin);
+  letter-spacing: 1.1px;
+  color: #4BC0C0;
+}
+
+.details .sub-num{
+  font-size: calc(8px + 2vmin);
+  letter-spacing: 0.5px;
+  color: #4BC0C0;
+}
+
+
+.details{
+
+  margin-top: 50px;
+
+}
+
+.details .date-row {
+
+  margin-bottom: 50px;
+}
+
+.details .date {
+  font-size: calc(2px + 2vmin);
+}
+
+.daily{
+
+}
+
+.with-margin {
+  margin-top: 35px;
+}
+
+.posts{
+  padding: 20px 10px;
+  margin-bottom: 20px;
+
+}
+
+.posts:hover {
+  border: 1px white solid;
 }
