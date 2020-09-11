@@ -21,7 +21,7 @@ const BarChart = ({categoryType}) => {
   labels: labels,
   datasets: [
     {
-      label: "US: Total Confirmed Cases",
+      label: "United States",
       fill: true,
       lineTension: 0.1,
       backgroundColor: "rgba(75,192,192,0.4)",
@@ -55,7 +55,7 @@ const BarChart = ({categoryType}) => {
           <Line
           data={data}
           width={100}
-          height={300}
+          height={200}
           options={{
             maintainAspectRatio: false
           }}

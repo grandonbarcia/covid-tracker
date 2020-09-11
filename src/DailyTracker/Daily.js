@@ -19,10 +19,10 @@ const Daily = ({stats, today, yesterday, tenDaysAgo, aMonthAgo}) => {
 
 
   return (
-    <div className = "col-md-12 offset-md-0">
+    <div className = "col-12 offset-0 col-md-12 offset-md-0">
 
       <div className = "row daily">
-        <div className = "col-md-3">
+        <div className = "col-3 col-md-3">
             <div className = "row">
               <div className = "col-md-12 text-center sub-num">
                   {today}
@@ -34,7 +34,7 @@ const Daily = ({stats, today, yesterday, tenDaysAgo, aMonthAgo}) => {
               </div>
             </div>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-3 col-md-3">
           <div className = "row">
             <div className ="col-md-12 text-center sub-num">
               {yesterday}
@@ -46,7 +46,7 @@ const Daily = ({stats, today, yesterday, tenDaysAgo, aMonthAgo}) => {
             </div>
           </div>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-3 col-md-3">
           <div className = "row">
             <div className ="col-md-12 text-center sub-num">
             {tenDaysAgo}
@@ -58,7 +58,7 @@ const Daily = ({stats, today, yesterday, tenDaysAgo, aMonthAgo}) => {
             </div>
           </div>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-3 col-md-3">
           <div className = "row">
             <div className ="col-md-12 text-center sub-num">
               {aMonthAgo}

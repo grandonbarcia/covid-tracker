@@ -22,7 +22,7 @@ const TotalRecovered = () => {
 
 
   return(
-    <div className = "col-md-4 offset-md-0 ">
+    <div className = "col-8 offset-2 col-md-4 offset-md-0 ">
       <div className = "panel">
         <div className = "row justify-content-center">
           Total Recovered

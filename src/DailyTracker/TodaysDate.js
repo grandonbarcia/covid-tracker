@@ -6,7 +6,7 @@ const TodaysDate = () => {
 
   return (
 
-      <div className = "col-md-4 date">
+      <div className = "col-md-4 col-lg-3 date">
         {getCurrentDate()}
       </div>
 

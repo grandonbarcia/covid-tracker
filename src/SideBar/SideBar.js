@@ -33,7 +33,7 @@ const SideBar = () => {
 
 
   return (
-    <div className = "col-md-3 offset-md-1">
+    <div className = "col-md-5 offset-md-0 col-lg-4 offset-lg-1">
       <Title title="Covid-19 News"/>
       {listPosts}
     </div>

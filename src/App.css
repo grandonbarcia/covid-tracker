@@ -1,5 +1,8 @@
-a {
 
+
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -31,15 +34,17 @@ a:visited {
   padding: 25px 0px 0px 25px;
 }
 
-.main-title-row {
+.title-row {
   padding-bottom: 75px
 }
 
 
-.main-title {
+.title-text {
 
   font-size: calc(10px + 2vmin);
-  border-bottom: 5px solid;
+
+  margin-right: 200px;
+
 
 }
 
@@ -65,8 +70,8 @@ a:visited {
 }
 
 .table-responsive{
-  max-height: 100%;
-  overflow: auto
+  max-height: 50%;
+  overflow: auto;
 }
 
 .summary .title-name{
@@ -131,4 +136,29 @@ font-size: calc(10px + 2vmin);
 
 .posts:hover {
   border: 1px white solid;
+}
+
+@media only screen and (max-width: 570px) {
+  .page-title{
+    font-size: calc(10px + 2vmin);
+    padding: 50px 0px 25px 110px;
+  }
+  .summary .sub-title{
+    font-size: calc(5px + 2vmin);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .summary .sub-num{
+    font-size: calc(8px + 2vmin);
+    letter-spacing: 1.1px;
+    color: #4BC0C0;
+  }
+  .panel{
+    padding-bottom: 50px
+  }
+  .details .date {
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    padding-bottom: 25px;
+  }
 }

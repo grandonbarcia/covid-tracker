@@ -4,8 +4,8 @@ import './App.css';
 const Title = ({title}) => {
 
   return(
-    <div className = "row main-title-row">
-      <div className = "col-md-12 main-title">
+    <div className = "row title-row">
+      <div className = "col-md-12 title-text">
         {title}
       </div>
     </div>

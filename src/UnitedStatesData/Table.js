@@ -30,7 +30,7 @@ const Table = () => {
 
 
     <div className = "row">
-      <div className = "col-md-12">
+      <div className = "col-md-12 ">
         <div className = "table-responsive">
           <table className = "table">
             <thead>
@@ -45,7 +45,7 @@ const Table = () => {
               </tr>
             </thead>
             <tbody>
-              {listStates}
+              {listStates.slice(0,10)}
             </tbody>
           </table>
         </div>

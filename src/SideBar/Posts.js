@@ -12,17 +12,20 @@ const Posts = ({title, url, img}) => {
   }
 
   return (
-
-    <a href={url} target="_blank">
-      <div className = "row posts ">
-          <div className = "col-md-4">
-            <img style={imgStyle} src={img} width = "100" height = "100"></img>
+    <div className = "row">
+      <div className = "col-lg-10">
+        <a href={url} target="_blank">
+          <div className = "row posts ">
+              <div className = "col-md-4">
+                <img style={imgStyle} src={img} width = "100" height = "100"></img>
+              </div>
+              <div className = "col-md-8">
+                {title}
+              </div>
           </div>
-          <div className = "col-md-8">
-            {title}
-          </div>
+        </a>
       </div>
-    </a>
+    </div>
 
   )
 
