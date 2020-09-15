@@ -6,7 +6,8 @@ import UpdatedLast from './UpdatedLast';
 
 const UnitedStatesData = () => {
   return (
-    <div className = "row">
+
+    <div className = "row box">
       <div className = "col-md-12">
         <Title title="State by State"/>
         <Table />

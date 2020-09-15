@@ -5,7 +5,7 @@ const Title = ({title}) => {
 
   return(
     <div className = "row title-row">
-      <div className = "col-md-12 title-text">
+      <div className = "col-12 col-md-12 title-text">
         {title}
       </div>
     </div>

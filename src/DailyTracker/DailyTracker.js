@@ -54,21 +54,24 @@ const DailyTracker = () => {
 
 
   return (
-    <div className = "row details">
-      <div className = "col-md-12">
-        <Title title="Daily Tracker"/>
-        <div className = "row date-row">
-          <TodaysDate />
-          <CategoryToggle setCategoryType={setCategoryType} />
-        </div>
-        <div className = "row">
-            <Daily today={today} yesterday={yesterday} tenDaysAgo={tenDaysAgo} aMonthAgo={aMonthAgo} />
-        </div>
-        <div className = "row with-margin">
-            <BarChart categoryType={categoryType}/>
+    
+    
+      <div className = "row box details">
+        <div className = "col-md-12">
+          <Title title="Daily Tracker"/>
+          <div className = "row date-row">
+            <TodaysDate />
+            <CategoryToggle setCategoryType={setCategoryType} />
+          </div>
+          <div className = "row">
+              <Daily today={today} yesterday={yesterday} tenDaysAgo={tenDaysAgo} aMonthAgo={aMonthAgo} />
+          </div>
+          <div className = "row with-margin">
+              <BarChart categoryType={categoryType}/>
+          </div>
         </div>
       </div>
-    </div>
+
   )
 }
 

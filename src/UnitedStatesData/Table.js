@@ -32,7 +32,7 @@ const Table = () => {
     <div className = "row">
       <div className = "col-md-12 ">
         <div className = "table-responsive">
-          <table className = "table">
+          <table className = "table text-right">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -41,7 +41,7 @@ const Table = () => {
                 <th scope="col">Recovered</th>
                 <th scope="col">Deaths</th>
                 <th scope="col">New Confirmed</th>
-                <th scope="col">New Deaths &#9650;</th>
+                <th scope="col">New Deaths</th>
               </tr>
             </thead>
             <tbody>

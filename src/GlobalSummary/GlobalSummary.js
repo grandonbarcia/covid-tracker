@@ -11,7 +11,8 @@ const GlobalSummary = (items) => {
 
 
   return (
-      <div className = "row justify-content-center summary ">
+    
+      <div className = "row  box summary ">
         <div className = "col-md-12">
           <Title title="Global Summary"/>
           <div className="row">
@@ -25,6 +26,7 @@ const GlobalSummary = (items) => {
           </div>
         </div>
       </div>
+    
   )
 }
 
