@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/covid-map-frontend/public/static/css/main.3075d719.chunk.css",
-    "main.js": "/covid-map-frontend/public/static/js/main.918eb4c5.chunk.js",
-    "main.js.map": "/covid-map-frontend/public/static/js/main.918eb4c5.chunk.js.map",
-    "runtime-main.js": "/covid-map-frontend/public/static/js/runtime-main.9ad58a70.js",
-    "runtime-main.js.map": "/covid-map-frontend/public/static/js/runtime-main.9ad58a70.js.map",
-    "static/js/2.7595f903.chunk.js": "/covid-map-frontend/public/static/js/2.7595f903.chunk.js",
-    "static/js/2.7595f903.chunk.js.map": "/covid-map-frontend/public/static/js/2.7595f903.chunk.js.map",
-    "index.html": "/covid-map-frontend/public/index.html",
-    "precache-manifest.045300d9eee0538ef59e43046c1f5544.js": "/covid-map-frontend/public/precache-manifest.045300d9eee0538ef59e43046c1f5544.js",
-    "service-worker.js": "/covid-map-frontend/public/service-worker.js",
-    "static/css/main.3075d719.chunk.css.map": "/covid-map-frontend/public/static/css/main.3075d719.chunk.css.map",
-    "static/js/2.7595f903.chunk.js.LICENSE.txt": "/covid-map-frontend/public/static/js/2.7595f903.chunk.js.LICENSE.txt"
+    "main.css": "/covid-map-frontend/static/css/main.3075d719.chunk.css",
+    "main.js": "/covid-map-frontend/static/js/main.87092318.chunk.js",
+    "main.js.map": "/covid-map-frontend/static/js/main.87092318.chunk.js.map",
+    "runtime-main.js": "/covid-map-frontend/static/js/runtime-main.6de7f5e8.js",
+    "runtime-main.js.map": "/covid-map-frontend/static/js/runtime-main.6de7f5e8.js.map",
+    "static/js/2.d3faf82f.chunk.js": "/covid-map-frontend/static/js/2.d3faf82f.chunk.js",
+    "static/js/2.d3faf82f.chunk.js.map": "/covid-map-frontend/static/js/2.d3faf82f.chunk.js.map",
+    "index.html": "/covid-map-frontend/index.html",
+    "precache-manifest.71f47d6d04db37c10c951263b4911259.js": "/covid-map-frontend/precache-manifest.71f47d6d04db37c10c951263b4911259.js",
+    "service-worker.js": "/covid-map-frontend/service-worker.js",
+    "static/css/main.3075d719.chunk.css.map": "/covid-map-frontend/static/css/main.3075d719.chunk.css.map",
+    "static/js/2.d3faf82f.chunk.js.LICENSE.txt": "/covid-map-frontend/static/js/2.d3faf82f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ad58a70.js",
-    "static/js/2.7595f903.chunk.js",
+    "static/js/runtime-main.6de7f5e8.js",
+    "static/js/2.d3faf82f.chunk.js",
     "static/css/main.3075d719.chunk.css",
-    "static/js/main.918eb4c5.chunk.js"
+    "static/js/main.87092318.chunk.js"
   ]
 }
