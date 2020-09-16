@@ -52,12 +52,12 @@ a:visited {
 .box {
   margin-top: 25px;
   border: 1px solid;
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 50px;
 }
 
 .sidebar-box {
-  max-height: 950px;
+  
   margin-top: 25px;
   border: 1px solid;
   border-radius: 10px;
@@ -120,8 +120,8 @@ font-size: calc(10px + 2vmin);
   font-size: calc(2px + 2vmin);
 }
 
-.daily{
-
+.toggle{
+  text-align: right;
 }
 
 .with-margin {
@@ -165,5 +165,15 @@ font-size: calc(10px + 2vmin);
     font-size: calc(10px + 2vmin);
     text-align: center;
     padding-bottom: 25px;
+  }
+  .date-row{
+    text-align: center;
+  }
+  .box{
+    border: none;
+    padding: 10px;
+  }
+  .toggle{
+    text-align: none;
   }
 }

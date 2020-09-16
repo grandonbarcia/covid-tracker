@@ -16,10 +16,10 @@ const Posts = ({title, url, img}) => {
       <div className = "col-lg-12">
         <a href={url} target="_blank">
           <div className = "row posts ">
-              <div className = "col-4 col-md-4">
+              <div className = "col-4 col-md-5">
                 <img style={imgStyle} src={img} width = "100" height = "100"></img>
               </div>
-              <div className = "col-8 col-md-8 ">
+              <div className = "h-50 col-8 col-md-7">
                 <span className = "post-title"></span>{title}
               </div>
           </div>

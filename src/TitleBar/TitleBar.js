@@ -8,7 +8,7 @@ const TitleBar = () => {
   return(
     <div className = "row page-title-row ">
       <div className = "col-md-3 offset-md-4">
-        <PageTitle title="This is a test"/>
+        <PageTitle title="Covid-19 Tracker"/>
       </div>
     </div>
 
