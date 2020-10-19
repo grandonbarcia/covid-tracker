@@ -1,4 +1,4 @@
-import React, {useState, useEffect}  from 'react';
+import React, { useState, useEffect } from 'react';
 import Posts from './Posts';
 import Title from '../Title';
 
@@ -16,7 +16,7 @@ const SideBar = () => {
   }, []);
 
   const getPosts = async () => {
-    const response = await fetch (REDDIT_API);
+    const response = await fetch(REDDIT_API);
     const data = await response.json();
     setPosts(data.data.children.slice(2, 7));
   }
@@ -24,17 +24,17 @@ const SideBar = () => {
   let listPosts = posts.map((posts, i) =>
 
     <Posts key={i}
-           title={posts.data.title}
-           url={posts.data.url}
-           img={posts.data.thumbnail}
+      title={posts.data.title}
+      url={posts.data.url}
+      img={posts.data.thumbnail}
     />
 
   );
 
 
   return (
-    <div className = "h-75 col-md-5 offset-md-0 col-lg-3 offset-lg-1 box">
-      <Title title="Covid-19 News"/>
+    <div className="h-75 col-12 col-md-5 offset-md-0 col-lg-3 offset-lg-1 box">
+      <Title title="Covid-19 News" />
       {listPosts}
     </div>
 

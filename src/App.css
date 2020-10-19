@@ -171,7 +171,7 @@ font-size: calc(10px + 2vmin);
   }
   .box{
     border: none;
-    padding: 10px;
+    padding: 15px;
   }
   .toggle{
     text-align: none;
