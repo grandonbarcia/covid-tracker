@@ -14,8 +14,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="container-fluid">
-        <TitleBar />
+      <nav class="navbar navbar-light bg-light mb-5" style={{ opacity: .8 }}>
+        <span class="navbar-brand mb-0 h1">Covid-19 Tracker</span>
+      </nav>
+      <div className="container-fluid h-100">
         <div className="row">
           <DataProvider>
             <GlobalSummary />

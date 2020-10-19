@@ -1,17 +1,17 @@
-import React, {useContext} from 'react';
-import {DataContext} from "../DataProvider"
+import React, { useContext } from 'react';
+import { DataContext } from "../DataProvider"
 
 
 
 const Table = () => {
 
-  const {value10} = useContext(DataContext);
+  const { value10 } = useContext(DataContext);
 
   var [statesData] = value10;
 
 
   const listStates = statesData.map((data, i) =>
-    <tr key = {i}>
+    <tr key={i}>
       <th scope="row">{i + 1}</th>
       <td> {data.state} </td>
       <td> {data.positive} </td>
@@ -22,17 +22,17 @@ const Table = () => {
     </tr>
   );
 
-  let topTenStates = listStates.slice(0,10);
+  let topTenStates = listStates.slice(0, 10);
 
 
 
   return (
 
 
-    <div className = "row">
-      <div className = "col-md-12 ">
-        <div className = "table-responsive">
-          <table className = "table text-right">
+    <div className="row">
+      <div className="col-12 col-md-12 ">
+        <div className="table-responsive">
+          <table className="table text-right">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -45,7 +45,7 @@ const Table = () => {
               </tr>
             </thead>
             <tbody>
-              {listStates.slice(0,10)}
+              {listStates.slice(0, 10)}
             </tbody>
           </table>
         </div>

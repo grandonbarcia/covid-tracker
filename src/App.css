@@ -1,4 +1,7 @@
 
+html, body, #root, .App {
+  min-height: 100vmin;
+}
 
 
 body{
@@ -21,7 +24,7 @@ a:visited {
 
 .App {
   background-color: #282c34;
-  min-height: 100vh;
+
   color: white;
 }
 
@@ -47,6 +50,8 @@ a:visited {
 
 
 }
+
+
 
 
 .box {
@@ -137,6 +142,22 @@ font-size: calc(10px + 2vmin);
 }
 
 @media only screen and (max-width: 570px) {
+  .panel-title-left{
+  
+    padding-left: 20px;
+    padding-top: 20px;
+    border-left: 3px solid #CED0D2;
+    border-top: 3px solid #CED0D2;
+  
+  }
+  .panel-title-right{
+    color: #282c34;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-right: 3px solid #CED0D2;
+    border-bottom: 3px solid #CED0D2;
+  
+  }
   .page-title{
     font-size: calc(10px + 2vmin);
     padding: 50px 0px 25px 110px;

@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-const PageTitle = ({title}) => {
+const PageTitle = ({ title }) => {
 
-  return(
+  return (
 
-      <div className = "page-title">
-        {title}
-      </div>
+    <div>
+      {title}
+    </div>
 
 
   )

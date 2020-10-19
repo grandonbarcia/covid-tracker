@@ -11,10 +11,6 @@ const SideBar = () => {
 
   let [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    getPosts();
-  }, []);
-
   const getPosts = async () => {
     const response = await fetch(REDDIT_API);
     const data = await response.json();
@@ -32,10 +28,22 @@ const SideBar = () => {
   );
 
 
+  useEffect(() => {
+    getPosts();
+  }, []);
+
+
+
+
   return (
-    <div className="h-75 col-12 col-md-5 offset-md-0 col-lg-3 offset-lg-1 box">
+    <div className="h-75 col-12 offset-0 col-md-5 offset-md-0 col-lg-3 offset-lg-1 box">
       <Title title="Covid-19 News" />
       {listPosts}
+      <div className="row mb-3">
+        <div className="col-12 col-md-12">
+          <h5 className="panel-title-right">GlobalSummary</h5>
+        </div>
+      </div>
     </div>
 
   )

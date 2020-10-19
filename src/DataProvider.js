@@ -1,6 +1,6 @@
-import React, {useEffect, useState, createContext} from 'react';
+import React, { useEffect, useState, createContext } from 'react';
 
-import {getDateISO} from './Date';
+import { getDateISO } from './Date';
 
 export const DataContext = createContext();
 
@@ -22,7 +22,7 @@ export const DataProvider = (props) => {
 
   let [confirmToday, setConfirmToday] = useState();
   let [confirmThirty, setConfirmThirty] = useState();
-  let [confirmTen,  setConfirmTen] = useState();
+  let [confirmTen, setConfirmTen] = useState();
   let [confirmYesterday, setConfirmYesterday] = useState();
 
   let [stats, setStats] = useState({});
@@ -42,7 +42,7 @@ export const DataProvider = (props) => {
     getStatesData()
       .then(handleStatesData)
       .catch(error);
-      console.log("Use Effect!");
+    console.log("Use Effect!");
   }, [])
 
   const getSummary = async () => {
@@ -57,9 +57,9 @@ export const DataProvider = (props) => {
     let countries = data.Countries;
     let gLobal = data.Global;
 
-    setConfirmed(getTop(countries, byConfirmed ));
-    setDeaths(getTop(countries, byDeaths ));
-    setRecovered(getTop(countries, byRecovered ));
+    setConfirmed(getTop(countries, byConfirmed));
+    setDeaths(getTop(countries, byDeaths));
+    setRecovered(getTop(countries, byRecovered));
     setTotal(gLobal);
   }
 
@@ -68,7 +68,7 @@ export const DataProvider = (props) => {
   }
 
   const getTop = (countries, byCategory) => {
-      return countries.sort(byCategory).slice(0,5);
+    return countries.sort(byCategory).slice(0, 5);
   };
 
   const byConfirmed = (a, b) => {
@@ -76,7 +76,7 @@ export const DataProvider = (props) => {
   }
 
   const byDeaths = (a, b) => {
-      return b.TotalDeaths - a.TotalDeaths;
+    return b.TotalDeaths - a.TotalDeaths;
   }
 
   const byRecovered = (a, b) => {
@@ -86,7 +86,7 @@ export const DataProvider = (props) => {
   const getDataSet = async () => {
     const response = await fetch(GRAPH_DATA, {
       headers: {
-        'X-Access-Token' : 'd908455c-8985-4153-9df2-1f9312db921c'
+        'X-Access-Token': 'd908455c-8985-4153-9df2-1f9312db921c'
       }
     });
     const data = await response.json();
@@ -120,14 +120,14 @@ export const DataProvider = (props) => {
     let deaths = [];
     let recovered = [];
 
-    for (let i = 1; i < dataSet.length; i++){
-      dates.push(dataSet[i].Date.slice(5,10));
-      confirmed.push(dataSet[i].Confirmed - dataSet[i-1].Confirmed)
-      deaths.push(dataSet[i].Deaths - dataSet[i-1].Deaths)
-      recovered.push(dataSet[i].Recovered - dataSet[i-1].Recovered);
+    for (let i = 1; i < dataSet.length; i++) {
+      dates.push(dataSet[i].Date.slice(5, 10));
+      confirmed.push(dataSet[i].Confirmed - dataSet[i - 1].Confirmed)
+      deaths.push(dataSet[i].Deaths - dataSet[i - 1].Deaths)
+      recovered.push(dataSet[i].Recovered - dataSet[i - 1].Recovered);
     }
 
-    setGraphData({confirmed, deaths, recovered, dates})
+    setGraphData({ confirmed, deaths, recovered, dates })
 
 
     return data
@@ -150,18 +150,20 @@ export const DataProvider = (props) => {
 
 
     let category = ["Confirmed", "Deaths", "Recovered"]
-    for ( let i = 0; i < category.length ; i++){
+    for (let i = 0; i < category.length; i++) {
 
-      today = data[data.length - 1][category[i]]- data[data.length - 2][category[i]];
+      today = data[data.length - 1][category[i]] - data[data.length - 2][category[i]];
       yesterday = data[data.length - 2][category[i]] - data[data.length - 3][category[i]]
       tenDaysAgo = data[data.length - 10][category[i]] - data[data.length - 11][category[i]]
       aMonthAgo = data[data.length - 30][category[i]] - data[data.length - 31][category[i]]
 
 
-      stats[category[i]] = {today,
-                    yesterday,
-                    tenDaysAgo,
-                  aMonthAgo}
+      stats[category[i]] = {
+        today,
+        yesterday,
+        tenDaysAgo,
+        aMonthAgo
+      }
 
 
     }
@@ -173,21 +175,23 @@ export const DataProvider = (props) => {
 
 
   return (
-    <div className = "col-md-6 offset-md-1">
+    <div className="col-12 col-md-6 offset-md-1">
       <DataContext.Provider
-        value={{ value: [confirmed, setConfirmed],
-                 value1: [confirmed, setConfirmed],
-                 value2: [deaths, setDeaths],
-                 value3: [recovered, setRecovered],
-                 value4: [total, setTotal],
-                 value5: [graphData, setGraphData],
-                 value6: [confirmToday, setConfirmToday],
-                 value7: [confirmTen,  setConfirmTen],
-                 value8: [confirmThirty, setConfirmThirty],
-                 value9: [confirmYesterday, setConfirmYesterday],
-                 value10: [statesData, setStatesData],
-                 value11: [graphData, setGraphData],
-                 value12: [stats, setStats]}}>
+        value={{
+          value: [confirmed, setConfirmed],
+          value1: [confirmed, setConfirmed],
+          value2: [deaths, setDeaths],
+          value3: [recovered, setRecovered],
+          value4: [total, setTotal],
+          value5: [graphData, setGraphData],
+          value6: [confirmToday, setConfirmToday],
+          value7: [confirmTen, setConfirmTen],
+          value8: [confirmThirty, setConfirmThirty],
+          value9: [confirmYesterday, setConfirmYesterday],
+          value10: [statesData, setStatesData],
+          value11: [graphData, setGraphData],
+          value12: [stats, setStats]
+        }}>
         {props.children}
       </DataContext.Provider>
     </div>
