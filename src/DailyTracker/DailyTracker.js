@@ -56,7 +56,7 @@ const DailyTracker = () => {
   return (
 
 
-    <div className="row box details">
+    <div className="row box details mt-10">
       <div className="col-md-12">
         <Title title="Daily Tracker" />
         <div className="row date-row">

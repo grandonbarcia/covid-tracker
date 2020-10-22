@@ -11,6 +11,8 @@ body{
 
 
 
+
+
 a:link  {
   text-decoration: none!important;
   color: inherit;
@@ -51,13 +53,9 @@ a:visited {
 
 }
 
-
-
-
 .box {
   margin-top: 25px;
   border: 1px solid;
-  border-radius: 25px;
   padding: 50px;
 }
 
@@ -141,9 +139,13 @@ font-size: calc(10px + 2vmin);
   text-overflow: ellipsis;
 }
 
+.panel-title-right{
+  display: none;
+
+}
+
 @media only screen and (max-width: 570px) {
   .panel-title-left{
-  
     padding-left: 20px;
     padding-top: 20px;
     border-left: 3px solid #CED0D2;
@@ -151,12 +153,12 @@ font-size: calc(10px + 2vmin);
   
   }
   .panel-title-right{
+    display: inherit;
     color: #282c34;
     padding-right: 5px;
     padding-bottom: 5px;
     border-right: 3px solid #CED0D2;
     border-bottom: 3px solid #CED0D2;
-  
   }
   .page-title{
     font-size: calc(10px + 2vmin);

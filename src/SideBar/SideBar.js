@@ -36,7 +36,7 @@ const SideBar = () => {
 
 
   return (
-    <div className="h-75 col-12 offset-0 col-md-5 offset-md-0 col-lg-3 offset-lg-1 box">
+    <div className="h-75 col-12 offset-0 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-3 offset-xl-1 box">
       <Title title="Covid-19 News" />
       {listPosts}
       <div className="row mb-3">

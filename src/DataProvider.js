@@ -175,7 +175,7 @@ export const DataProvider = (props) => {
 
 
   return (
-    <div className="col-12 col-md-6 offset-md-1">
+    <div className="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-1">
       <DataContext.Provider
         value={{
           value: [confirmed, setConfirmed],
