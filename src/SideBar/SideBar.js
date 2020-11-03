@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Posts from './Posts';
 import Title from '../Title';
-
+import Virus from '../img/virus.png'
 
 
 
@@ -17,12 +17,14 @@ const SideBar = () => {
     setPosts(data.data.children.slice(2, 7));
   }
 
+  console.log(posts);
+
   let listPosts = posts.map((posts, i) =>
 
     <Posts key={i}
       title={posts.data.title}
       url={posts.data.url}
-      img={posts.data.thumbnail}
+      img={posts.data.thumbnail === 'default' ? Virus : posts.data.thumbnail}
     />
 
   );
