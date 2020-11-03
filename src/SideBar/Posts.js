@@ -16,11 +16,11 @@ const Posts = ({ title, url, img }) => {
       <div className="col-12 col-lg-12">
         <a href={url} target="_blank">
           <div className="row posts ">
-            <div className="col-4 col-md-3 offset-md-1 col-lg-3 offset-lg-1 offset-lg-0 col-xl-4 col-xl-offset-0">
+            <div className="col-4 col-md-3 offset-md-1 col-lg-3 offset-lg-1 offset-lg-0 col-xl-5 offset-xl-0">
               <img style={imgStyle} src={img} width="100" height="100"></img>
             </div>
             <div className="h-50 col-8 col-md-7 col-lg-7 col-xl-7 offset-xl-0">
-              <span className="post-title"></span>{title}
+              <span className="post-title">{title}</span>
             </div>
           </div>
         </a>

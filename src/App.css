@@ -8,11 +8,6 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
-
-
-
 a:link  {
   text-decoration: none!important;
   color: inherit;
@@ -135,6 +130,7 @@ font-size: calc(10px + 2vmin);
 }
 
 .post-title{
+  font-size: calc(5px + 1vmin);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -163,6 +159,9 @@ font-size: calc(10px + 2vmin);
   .page-title{
     font-size: calc(10px + 2vmin);
     padding: 50px 0px 25px 110px;
+  }
+  .post-title{
+    font-size: calc(8px + 2vmin);
   }
   .summary .sub-title{
     font-size: calc(5px + 2vmin);
