@@ -46,7 +46,6 @@ const DailyTracker = () => {
 
 
   useEffect(() => {
-
     isEmpty(stats) ? console.log("Daily Stats is Empty") : displayStats(categoryType);
   }, [categoryType, stats]);
 
@@ -59,7 +58,7 @@ const DailyTracker = () => {
     <div className="row box details mt-10">
       <div className="col-md-12">
         <Title title="Daily Tracker" />
-        <div className="row date-row">
+        <div className="row date-row ">
           <TodaysDate />
           <CategoryToggle setCategoryType={setCategoryType} />
         </div>
