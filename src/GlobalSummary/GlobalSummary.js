@@ -8,8 +8,6 @@ import TotalDeath from './TotalDeath';
 const GlobalSummary = (items) => {
 
 
-
-
   return (
 
     <div className="row box summary ">
