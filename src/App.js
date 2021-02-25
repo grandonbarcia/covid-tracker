@@ -4,8 +4,8 @@ import TitleBar from './TitleBar/TitleBar';
 import NavBar from './NavBar/NavBar';
 import GlobalSummary from './GlobalSummary/GlobalSummary';
 import DailyTracker from './DailyTracker/DailyTracker';
-import Table from './UnitedStatesData/Table';
-import UnitedStatesData from './UnitedStatesData/UnitedStatesData';
+import Table from './USData/Table';
+import USData from './USData/USData';
 import SideBar from './SideBar/SideBar';
 import { DataProvider } from "./DataProvider";
 
@@ -22,7 +22,7 @@ const App = () => {
           <DataProvider>
             <GlobalSummary />
             <DailyTracker />
-            <UnitedStatesData />
+            <USData />
           </DataProvider>
           <SideBar />
         </div>
