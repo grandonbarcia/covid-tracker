@@ -26,6 +26,7 @@ export const DataProvider = (props) => {
   let [confirmYesterday, setConfirmYesterday] = useState();
 
   let [stats, setStats] = useState({});
+  let [globalSummary, setGlobalSummary] = useState({});
   let [statesData, setStatesData] = useState([]);
   let [graphData, setGraphData] = useState({});
 
@@ -42,25 +43,32 @@ export const DataProvider = (props) => {
     getStatesData()
       .then(handleStatesData)
       .catch(error);
-    console.log("Use Effect!");
+
   }, [])
 
   const getSummary = async () => {
     const response = await fetch(SUMMARY_DATA);
     const data = await response.json();
-
     return data
   }
 
   const handleResponse = (data) => {
-    console.log("Summary Succesfully Loaded!");
-    let countries = data.Countries;
-    let gLobal = data.Global;
 
+    let countries = data.Countries;
+    let total = data.Global;
     setConfirmed(getTop(countries, byConfirmed));
     setDeaths(getTop(countries, byDeaths));
     setRecovered(getTop(countries, byRecovered));
-    setTotal(gLobal);
+
+
+    // setGlobalSummary({
+    //   confirmed: getTop(countries, byConfirmed),
+    //   deaths: getTop(countries, byDeaths),
+    //   recovered: getTop(countries, byRecovered),
+    //   total: total
+
+    // });
+    setTotal(total);
   }
 
   const error = (error) => {
@@ -136,7 +144,7 @@ export const DataProvider = (props) => {
 
   const displayDailyStats = (data) => {
 
-
+    console.log(data);
     let confirmed = {};
     let deaths = {};
     let recovered = {};
@@ -167,7 +175,6 @@ export const DataProvider = (props) => {
 
 
     }
-    console.log(stats);
     setStats(stats);
     return data;
   }
@@ -178,6 +185,7 @@ export const DataProvider = (props) => {
     <div className="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-1">
       <DataContext.Provider
         value={{
+          globalSummary,
           value: [confirmed, setConfirmed],
           value1: [confirmed, setConfirmed],
           value2: [deaths, setDeaths],
