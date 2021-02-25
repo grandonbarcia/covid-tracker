@@ -17,7 +17,7 @@ const SideBar = () => {
     setPosts(data.data.children.slice(2, 7));
   }
 
-  console.log(posts);
+
 
   let listPosts = posts.map((posts, i) =>
 
