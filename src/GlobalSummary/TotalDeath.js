@@ -28,7 +28,6 @@ const TotalDeath = () => {
       <div className="row justify-content-center">
         Total Deaths:
         <div className="col-md-12 title-name">
-
           <Total num={total.TotalDeaths} />
         </div>
       </div>

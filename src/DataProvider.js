@@ -144,7 +144,7 @@ export const DataProvider = (props) => {
 
   const displayDailyStats = (data) => {
 
-    console.log(data);
+
     let confirmed = {};
     let deaths = {};
     let recovered = {};
