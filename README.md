@@ -4,7 +4,7 @@ Displays current trends of Covid-19 cases, deaths, and recovered both global and
 
 ## Motivation
 
-Inspired by the pandemic, I wanted to utilize a covid-19 API to display the current climate. 
+I wanted to outline the current corona virus cases to see if it was getting better or not. That's why I built a simple web app that displays the latests statistics of the Covid-19 Pandemic. Take a look at the top countries that have been effected the most. Also, users can view trends of confirmed cases for the past 30 days in the United states. 
 
 ## Tech/framework used
 
